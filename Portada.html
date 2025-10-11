@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colocho Travelers</title>
+    <link rel="stylesheet" href="estilo.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    
+    <header class="header">
+        <div class="header-content">
+            
+            <div class="play-logo">
+                <img src="Imagenes/play.png" alt="Logo" class="play-logo-image">
+                <span class="play-text">Google Play</span>
+            </div>
+            
+            
+            <nav class="nav-tabs">
+                <a href="#" class="nav-tab">Juegos</a>
+                <a href="#" class="nav-tab active">Apps</a>
+                <a href="#" class="nav-tab">Libros</a>
+                <a href="#" class="nav-tab">Infantiles</a>
+            </nav>
+            
+            
+            <div class="header-icons">
+                <i class="fas fa-search"></i>
+                <i class="fas fa-question-circle"></i>
+                <div class="profile-icon">W</div>
+            </div>
+        </div>
+    </header>
+
+    
+    <main class="main-content">
+        <div class="content-container">
+            
+            <div class="app-info">
+                <h1 class="app-title">Colocho Travelers</h1>
+                <p class="developer">Colocho Travelers SA de CV</p>
+                
+                <div class="app-stats">
+                    <div class="stat-item">
+                        <span class="stat-number">100 k+</span>
+                        <span class="stat-label">Descargas</span>
+                    </div>
+                    <div class="stat-item">
+                        <div class="age-rating">E</div>
+                        <span class="age-text">Apto para todo público</span>
+                        <i class="fas fa-info-circle"></i>
+                    </div>
+                </div>
+                
+                <div class="action-buttons">
+                    <button class="install-btn">Instalar</button>
+                    <div class="action-links">
+                        <a href="#" class="action-link">
+                            <i class="fas fa-share-alt"></i>
+                            Compartir
+                        </a>
+                        <a href="#" class="action-link">
+                            <i class="fas fa-bookmark"></i>
+                            Agregar a la lista de deseos
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="device-info">
+                    <i class="fas fa-laptop"></i>
+                    <span>Esta app está disponible para todos tus dispositivos</span>
+                </div>
+            </div>
+            
+            
+            <div class="app-icon-container">
+                <div class="app-icon">
+                    <img src="Imagenes/logo.jpeg" alt="App Icon" class="app-icon-image">
+                </div>
+            </div>
+        </div>
+        
+        
+        <div class="two-column-section">
+            
+            <div class="left-column">
+                <div class="screenshots-container">
+                    <section class="screenshots-section">
+                        <h2 class="screenshots-title">Capturas de pantalla</h2>
+                        <div class="screenshots-wrapper">
+                            <button class="gallery-btn prev" aria-label="Anterior">
+                                <i class="fas fa-chevron-left"></i>
+                            </button>
+                            <div class="screenshots-gallery" id="screenshotsGallery">
+                            <div class="screenshot-item">
+                                <img src="Imagenes/Pantalla1.png" alt="Captura 1" class="screenshot-image">
+                            </div>
+                            <div class="screenshot-item">
+                                <img src="Imagenes/Pantalla2.png" alt="Captura 2" class="screenshot-image">
+                            </div>
+                            <div class="screenshot-item">
+                                <img src="Imagenes/Pantalla3.png" alt="Captura 3" class="screenshot-image">
+                            </div>
+                            <div class="screenshot-item">
+                                <img src="Imagenes/Pantalla4.png" alt="Captura 4" class="screenshot-image">
+                            </div>
+                            <div class="screenshot-item">
+                                <img src="Imagenes/Pantalla5.png" alt="Captura 5" class="screenshot-image">
+                            </div>
+                            <div class="screenshot-item">
+                                <img src="Imagenes/Pantalla6.png" alt="Captura 6" class="screenshot-image">
+                            </div>
+                            </div>
+                            <button class="gallery-btn next" aria-label="Siguiente">
+                                <i class="fas fa-chevron-right"></i>
+                            </button>
+                        </div>
+                    </section>
+                </div>
+
+                
+                <section class="about-section">
+                    <h2 class="section-title" tabindex="0" role="button" aria-label="Ver detalles de Acerca de esta app">Acerca de esta app
+                        <button class="about-open-btn" aria-label="Ver detalles de Acerca de esta app">
+                            <i class="fas fa-chevron-right"></i>
+                        </button>
+                    </h2>
+                    <p class="about-paragraph">
+                        Colocho Travelers es una aplicación pensada para todos aquellos que desean viajar de manera cómoda, segura y accesible.
+A diferencia de otras plataformas, nosotros trabajamos directamente con hoteles y empresas del sector turístico que ponen a disposición sus habitaciones y servicios. Esto nos permite ofrecer precios más bajos y, al mismo tiempo, dar visibilidad a hoteles de distintas categorías en todo el mundo.
+Nuestro compromiso es ayudarte a descubrir lugares increíbles, desde grandes cadenas hoteleras hasta pequeños hospedajes locales con un encanto único.
+                    </p>
+                    <p class="about-paragraph">
+                        Con la renovada aplicación podrás llevar en tu dispositivo móvil una nueva experiencia
+                        de servicio y comodidad. Tendrás al alcance de tus manos toda la información que
+                        necesitas para disfrutar de unas vacaciones inolvidables.
+                    </p>
+                  
+                    <div class="about-meta">
+                        <div class="about-updated">
+                            <span class="meta-label">Actualización</span>
+                            <span class="meta-value">9 oct 2025</span>
+                        </div>
+                        
+                </section>
+                
+                
+                <div class="modal-overlay" id="aboutModalOverlay" hidden></div>
+                <div class="modal" id="aboutModal" role="dialog" aria-modal="true" aria-labelledby="aboutModalTitle" hidden>
+                    <div class="modal-header">
+                        <div class="modal-app-icon">
+                            <img src="Imagenes/logo.jpeg" alt="App Icon" />
+                        </div>
+                        <div class="modal-title-wrap">
+                            <h3 id="aboutModalTitle">Colocho Travelers</h3>
+                            <span class="modal-subtitle">Acerca de esta app</span>
+                        </div>
+                        <button class="modal-close" aria-label="Cerrar">
+                            <i class="fas fa-times"></i>
+                        </button>
+                    </div>
+                    <div class="modal-content">
+                        <p>Colocho Travelers es una aplicación pensada para todos aquellos que desean viajar de manera cómoda, segura y accesible. A diferencia de otras plataformas, trabajamos directamente con hoteles y empresas del sector turístico para ofrecer mejores precios y mayor visibilidad a hospedajes de todas las categorías.</p>
+                        <p>Con la renovada aplicación podrás llevar en tu dispositivo móvil una nueva experiencia de servicio y comodidad. Visualiza actividades, agenda servicios y organiza tu estancia con facilidad.</p>
+                        <h4>Características:</h4>
+                        <ul class="modal-list">
+                            <li>Calendario de actividades diarias y shows nocturnos.</li>
+                            <li>Agenda semanal de actividades personalizadas.</li>
+                            <li>Pre check-in.</li>
+                            <li>Room Service y solicitudes desde la app.</li>
+                            <li>Reservas de servicios de SPA y restaurantes.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                
+                <section class="safety-section">
+                    <h2 class="section-title" tabindex="0" role="button" aria-label="Ver detalles de Seguridad de los datos">Seguridad de los datos
+                        <a class="safety-open-btn" href="Segudatos.html" aria-label="Ver detalles de Seguridad de los datos">
+                            <i class="fas fa-chevron-right"></i>
+                        </a>
+                    </h2>
+                    <p class="safety-intro">
+                        El primer paso de la seguridad es comprender cómo los desarrolladores recopilan y
+                        comparten tus datos. Las prácticas de privacidad y seguridad de datos pueden variar en
+                        función del uso de la app, la región y la edad.
+                    </p>
+                    <div class="safety-cards">
+                        <div class="safety-card">
+                            <i class="fas fa-share-nodes"></i>
+                            <div>
+                                <div class="card-title">No se comparten datos con terceros</div>
+                                <a href="#" class="card-link">Más información</a>
+                            </div>
+                        </div>
+                        <div class="safety-card">
+                            <i class="fas fa-database"></i>
+                            <div>
+                                <div class="card-title">Es posible que esta app recopile estos tipos de datos</div>
+                                <div class="card-subtitle">Información personal e información y rendimiento de la app</div>
+                            </div>
+                        </div>
+                        <div class="safety-card">
+                            <i class="fas fa-lock"></i>
+                            <div>
+                                <div class="card-title">Los datos están encriptados en tránsito</div>
+                            </div>
+                        </div>
+                        <div class="safety-card">
+                            <i class="fas fa-trash-alt"></i>
+                            <div>
+                                <div class="card-title">Puedes solicitar que se borren los datos</div>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="Segudatos.html" class="details-link">Ver detalles</a>
+                </section>
+                
+                
+                <section class="whatsnew-section">
+                    <h2 class="section-title">Novedades</h2>
+                    <p class="whatsnew-text">
+                        ¡Tenemos algo nuevo para ti! La Agenda llega con un diseño completamente renovado para
+                        organizar mejor tu estancia. Además, incluimos correcciones generales para que tu
+                        experiencia sea más fluida.
+                    </p>
+                </section>
+            </div>
+            
+            
+            <div class="right-column">
+                <div class="right-column-info">
+                    
+                    <div class="assistance-container">
+                        <section class="assistance-section">
+                            <h2 class="assistance-title">
+                                Asistencia de la app
+                                <i class="fas fa-chevron-up"></i>
+                            </h2>
+                            
+                            <div class="assistance-items">
+                                <div class="assistance-item">
+                                    <a href="Paginaweb/index.html" target="_blank" class="assistance-link">
+                                        <i class="fas fa-globe"></i>
+                                        <span>Sitio web</span>
+                                    </a>
+                                </div>
+                                
+                                <div class="assistance-item">
+                                    <a href="https://forms.gle/XQcX24Lt8JvqQMSP7" class="assistance-link">
+                                        <i class="fas fa-envelope"></i>
+                                        <div class="email-info">
+                                            <span>Correo de ayuda</span>
+                                            <span class="email-address">appsupport@colochotravelers.com</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                
+                                <div class="assistance-item">
+                                    <a href="" target="_blank" class="assistance-link">
+                                        <i class="fas fa-shield-alt"></i>
+                                        <span>Política de Privacidad</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                    
+                    
+                    <div class="developer-container">
+                        <section class="developer-section">
+                            <h2 class="developer-title">Acerca del desarrollador</h2>
+                            <div class="developer-info">
+                                <p><strong>Hotelera Colocho Travelers S.A de C.V</strong></p>
+                                <p>colochotravelers@gmail.com</p>
+                                <p>El Salvador, Departamento de Santa Ana entre 7 AV. y 5 Calle Poniente, a un costado de la Alcaldia Municipal.</p>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script>
+        (function () {
+            const gallery = document.getElementById('screenshotsGallery');
+            if (!gallery) return;
+            const prevBtn = document.querySelector('.gallery-btn.prev');
+            const nextBtn = document.querySelector('.gallery-btn.next');
+            const aboutOpenBtn = document.querySelector('.about-open-btn');
+            const aboutTitle = document.querySelector('.section-title[role="button"]');
+            const modal = document.getElementById('aboutModal');
+            const overlay = document.getElementById('aboutModalOverlay');
+            const modalClose = document.querySelector('.modal-close');
+            const gap = parseInt(getComputedStyle(gallery).gap || '12', 10);
+
+            function getItemWidth() {
+                const firstItem = gallery.querySelector('.screenshot-item');
+                if (!firstItem) return 0;
+                const rect = firstItem.getBoundingClientRect();
+                return Math.round(rect.width + gap);
+            }
+
+            function scrollByItems(n) {
+                const amount = getItemWidth() * n;
+                gallery.scrollBy({ left: amount, behavior: 'smooth' });
+            }
+
+            prevBtn.addEventListener('click', () => scrollByItems(-1));
+            nextBtn.addEventListener('click', () => scrollByItems(1));
+
+            function updateButtons() {
+                const atStart = gallery.scrollLeft <= 0;
+                const atEnd = Math.ceil(gallery.scrollLeft + gallery.clientWidth) >= gallery.scrollWidth;
+                prevBtn.disabled = atStart;
+                nextBtn.disabled = atEnd;
+                prevBtn.style.opacity = atStart ? 0.5 : 1;
+                nextBtn.style.opacity = atEnd ? 0.5 : 1;
+            }
+            gallery.addEventListener('scroll', updateButtons, { passive: true });
+            window.addEventListener('resize', () => setTimeout(updateButtons, 50));
+            updateButtons();
+
+            function openModal() {
+                modal.hidden = false;
+                overlay.hidden = false;
+                document.body.style.overflow = 'hidden';
+            }
+            function closeModal() {
+                modal.hidden = true;
+                overlay.hidden = true;
+                document.body.style.overflow = '';
+            }
+            aboutOpenBtn.addEventListener('click', openModal);
+            aboutTitle.addEventListener('keydown', (e) => {
+                if (e.key === 'Enter' || e.key === ' ') {
+                    e.preventDefault();
+                    openModal();
+                }
+            });
+            modalClose.addEventListener('click', closeModal);
+            overlay.addEventListener('click', closeModal);
+            document.addEventListener('keydown', (e) => {
+                if (e.key === 'Escape') {
+                    closeModal();
+                }
+            });
+        })();
+    </script>
+</body>
+</html>
+
