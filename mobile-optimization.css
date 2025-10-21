@@ -1,0 +1,588 @@
+/* Optimización completa para móviles */
+
+/* Reset y base para móviles */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.container {
+    padding: 0 var(--spacing-md);
+    max-width: 100%;
+}
+
+/* Header móvil */
+.header {
+    padding: var(--spacing-sm) 0;
+}
+
+.nav-container {
+    flex-direction: column;
+    gap: var(--spacing-md);
+}
+
+.nav-logo {
+    justify-content: center;
+    margin-bottom: var(--spacing-sm);
+}
+
+.nav-logo h1 {
+    font-size: var(--font-size-lg);
+}
+
+.logo-image {
+    height: 35px;
+    max-width: 120px;
+}
+
+.nav-menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: var(--spacing-sm);
+    padding: 0;
+}
+
+.nav-menu li {
+    margin: 0;
+}
+
+.nav-menu li a {
+    padding: var(--spacing-xs) var(--spacing-sm);
+    font-size: var(--font-size-sm);
+    white-space: nowrap;
+}
+
+/* Hero móvil */
+.hero {
+    min-height: 100vh;
+    padding: var(--spacing-xl) 0;
+    text-align: center;
+}
+
+.hero .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--spacing-xl);
+    padding: 0 var(--spacing-md);
+}
+
+.hero-content {
+    max-width: 100%;
+    order: 1;
+}
+
+.hero-badge {
+    font-size: var(--font-size-xs);
+    padding: var(--spacing-xs) var(--spacing-md);
+    margin-bottom: var(--spacing-md);
+}
+
+.hero-title {
+    font-size: var(--font-size-3xl);
+    line-height: 1.2;
+    margin-bottom: var(--spacing-md);
+}
+
+.hero-description {
+    font-size: var(--font-size-base);
+    margin-bottom: var(--spacing-lg);
+    max-width: 100%;
+}
+
+.hero-actions {
+    margin-bottom: var(--spacing-lg);
+}
+
+.hero-buttons {
+    flex-direction: column;
+    gap: var(--spacing-md);
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+.btn-large {
+    width: 100%;
+    padding: var(--spacing-md) var(--spacing-lg);
+    font-size: var(--font-size-base);
+}
+
+.hero-play {
+    justify-content: center;
+    margin-top: var(--spacing-md);
+}
+
+.play-button {
+    width: 50px;
+    height: 50px;
+    font-size: var(--font-size-base);
+}
+
+.hero-features {
+    flex-direction: column;
+    gap: var(--spacing-md);
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.hero-features .feature-item {
+    width: 100%;
+    padding: var(--spacing-md) var(--spacing-lg);
+    min-height: auto;
+    transform: none;
+}
+
+.hero-features .feature-icon {
+    width: 40px;
+    height: 40px;
+    font-size: var(--font-size-lg);
+    margin-bottom: var(--spacing-sm);
+}
+
+.hero-features .feature-text h4 {
+    font-size: var(--font-size-sm);
+    margin: 0;
+}
+
+.hero-features .feature-text p {
+    font-size: var(--font-size-xs);
+    margin: 0;
+}
+
+.hero-visual {
+    order: 2;
+    width: 100%;
+    max-width: 280px;
+    margin: 0 auto;
+}
+
+.hero-phone {
+    width: 100%;
+    height: auto;
+    max-width: 250px;
+    margin: 0 auto;
+}
+
+.phone-frame {
+    width: 100%;
+    height: 500px;
+    padding: 15px;
+}
+
+.phone-screen {
+    width: 100%;
+    height: 100%;
+    border-radius: 25px;
+}
+
+.screen-content {
+    padding: 15px;
+}
+
+.status-bar {
+    font-size: 10px;
+    margin-bottom: 15px;
+}
+
+.app-body {
+    gap: 15px;
+}
+
+.weather-widget {
+    padding: 12px;
+    border-radius: 12px;
+}
+
+.weather-icon {
+    font-size: 18px;
+}
+
+.weather-temp {
+    font-size: 16px;
+}
+
+.weather-location {
+    font-size: 10px;
+}
+
+.compass-widget {
+    padding: 15px;
+    height: 80px;
+}
+
+.compass-needle {
+    width: 30px;
+    height: 2px;
+}
+
+.compass-direction {
+    font-size: 12px;
+}
+
+.modules-grid {
+    gap: 8px;
+}
+
+.module-item {
+    padding: 12px;
+    font-size: 14px;
+}
+
+.module-item i {
+    font-size: 16px;
+}
+
+/* Secciones generales móvil */
+.section-header {
+    text-align: center;
+    padding: 0 var(--spacing-md);
+    margin-bottom: var(--spacing-xl);
+}
+
+.section-title {
+    font-size: var(--font-size-2xl);
+    margin-bottom: var(--spacing-md);
+}
+
+.section-description {
+    font-size: var(--font-size-base);
+    line-height: 1.5;
+}
+
+/* Módulos móvil */
+.modules {
+    padding: var(--spacing-xl) 0;
+}
+
+.modules-grid {
+    grid-template-columns: 1fr;
+    gap: var(--spacing-lg);
+    padding: 0 var(--spacing-md);
+}
+
+.module-card {
+    padding: var(--spacing-lg);
+    min-height: 200px;
+    transform: none;
+}
+
+.module-icon {
+    width: 70px;
+    height: 70px;
+    font-size: var(--font-size-2xl);
+    margin-bottom: var(--spacing-md);
+}
+
+.module-card h3 {
+    font-size: var(--font-size-lg);
+    margin-bottom: var(--spacing-sm);
+}
+
+.module-card p {
+    font-size: var(--font-size-sm);
+    margin-bottom: var(--spacing-md);
+}
+
+.module-features {
+    text-align: left;
+}
+
+.module-features li {
+    font-size: var(--font-size-xs);
+    padding: var(--spacing-xs) 0;
+}
+
+/* Características móvil */
+.features {
+    padding: var(--spacing-xl) 0;
+}
+
+.features-grid {
+    grid-template-columns: 1fr;
+    gap: var(--spacing-lg);
+    padding: 0 var(--spacing-md);
+}
+
+.feature-item {
+    padding: var(--spacing-lg);
+    min-height: 200px;
+    transform: none;
+    border-radius: 20px;
+}
+
+.feature-icon {
+    width: 80px;
+    height: 80px;
+    font-size: var(--font-size-2xl);
+    margin-bottom: var(--spacing-md);
+}
+
+.feature-item h3 {
+    font-size: var(--font-size-lg);
+    margin-bottom: var(--spacing-sm);
+}
+
+.feature-item p {
+    font-size: var(--font-size-sm);
+    max-width: 100%;
+}
+
+/* Exploración móvil */
+.exploration {
+    padding: var(--spacing-xl) 0;
+}
+
+.exploration-grid {
+    grid-template-columns: 1fr;
+    gap: var(--spacing-lg);
+    padding: 0 var(--spacing-md);
+}
+
+.exploration-card {
+    padding: var(--spacing-lg);
+    min-height: 250px;
+    transform: none;
+}
+
+.exploration-icon {
+    width: 80px;
+    height: 80px;
+    font-size: var(--font-size-2xl);
+    margin-bottom: var(--spacing-md);
+}
+
+.exploration-card h3 {
+    font-size: var(--font-size-lg);
+    margin-bottom: var(--spacing-sm);
+}
+
+.exploration-card p {
+    font-size: var(--font-size-sm);
+    margin-bottom: var(--spacing-md);
+}
+
+.exploration-features li {
+    font-size: var(--font-size-xs);
+    padding: var(--spacing-xs) 0;
+}
+
+/* Estadísticas móvil */
+.stats {
+    padding: var(--spacing-xl) 0;
+}
+
+.stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--spacing-md);
+    padding: 0 var(--spacing-md);
+}
+
+.stat-item {
+    padding: var(--spacing-md);
+    text-align: center;
+}
+
+.stat-icon {
+    width: 50px;
+    height: 50px;
+    font-size: var(--font-size-lg);
+    margin-bottom: var(--spacing-sm);
+}
+
+.stat-number {
+    font-size: var(--font-size-2xl);
+    margin-bottom: var(--spacing-xs);
+}
+
+.stat-label {
+    font-size: var(--font-size-sm);
+    margin-bottom: var(--spacing-xs);
+}
+
+.stat-description {
+    font-size: var(--font-size-xs);
+}
+
+/* Testimonios móvil */
+.testimonials {
+    padding: var(--spacing-xl) 0;
+}
+
+.testimonials-grid {
+    grid-template-columns: 1fr;
+    gap: var(--spacing-lg);
+    padding: 0 var(--spacing-md);
+}
+
+.testimonial-card {
+    padding: var(--spacing-lg);
+    transform: none;
+}
+
+.testimonial-content p {
+    font-size: var(--font-size-base);
+    margin-bottom: var(--spacing-md);
+}
+
+.quote-icon {
+    font-size: var(--font-size-lg);
+    margin-bottom: var(--spacing-sm);
+}
+
+.author-avatar {
+    width: 40px;
+    height: 40px;
+    font-size: var(--font-size-base);
+}
+
+.author-info h4 {
+    font-size: var(--font-size-base);
+}
+
+.author-info p {
+    font-size: var(--font-size-sm);
+}
+
+/* Footer móvil */
+.footer {
+    padding: var(--spacing-xl) 0 var(--spacing-md);
+}
+
+.footer-content {
+    grid-template-columns: 1fr;
+    gap: var(--spacing-lg);
+    text-align: center;
+    padding: 0 var(--spacing-md);
+}
+
+.footer-brand {
+    justify-content: center;
+    margin-bottom: var(--spacing-md);
+}
+
+.footer-brand h3 {
+    font-size: var(--font-size-lg);
+}
+
+.footer-logo {
+    height: 35px;
+    max-width: 120px;
+}
+
+.footer-section h3,
+.footer-section h4 {
+    font-size: var(--font-size-lg);
+    margin-bottom: var(--spacing-sm);
+}
+
+.footer-section p {
+    font-size: var(--font-size-sm);
+    margin-bottom: var(--spacing-sm);
+}
+
+.footer-section ul li {
+    margin-bottom: var(--spacing-xs);
+}
+
+.footer-section ul li a {
+    font-size: var(--font-size-sm);
+}
+
+.social-links {
+    justify-content: center;
+    margin-top: var(--spacing-md);
+}
+
+.social-links a {
+    width: 35px;
+    height: 35px;
+    font-size: var(--font-size-sm);
+}
+
+/* Botones móvil */
+.btn {
+    padding: var(--spacing-sm) var(--spacing-md);
+    font-size: var(--font-size-sm);
+    border-radius: var(--border-radius-md);
+}
+
+.btn-large {
+    padding: var(--spacing-md) var(--spacing-lg);
+    font-size: var(--font-size-base);
+}
+
+/* Mejoras específicas para pantallas muy pequeñas */
+@media (max-width: 360px) {
+    .container {
+        padding: 0 var(--spacing-sm);
+    }
+    
+    .hero-title {
+        font-size: var(--font-size-2xl);
+    }
+    
+    .section-title {
+        font-size: var(--font-size-xl);
+    }
+    
+    .hero-phone {
+        max-width: 220px;
+    }
+    
+    .phone-frame {
+        height: 440px;
+        padding: 12px;
+    }
+    
+    .stats-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .nav-menu {
+        flex-direction: column;
+        gap: var(--spacing-xs);
+    }
+    
+    .nav-menu li a {
+        padding: var(--spacing-xs);
+        font-size: var(--font-size-xs);
+    }
+}
+
+/* Orientación landscape en móviles */
+@media (max-width: 768px) and (orientation: landscape) {
+    .hero {
+        min-height: auto;
+        padding: var(--spacing-lg) 0;
+    }
+    
+    .hero .container {
+        flex-direction: row;
+        text-align: left;
+    }
+    
+    .hero-content {
+        flex: 1;
+        order: 1;
+    }
+    
+    .hero-visual {
+        flex: 1;
+        order: 2;
+        max-width: 200px;
+    }
+    
+    .hero-phone {
+        max-width: 180px;
+    }
+    
+    .phone-frame {
+        height: 360px;
+    }
+}

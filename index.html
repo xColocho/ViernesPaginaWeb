@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navis - Tu Compañero de Navegación Inteligente</title>
+    <meta name="description" content="Navis es la aplicación definitiva para navegación, clima, sensores y supervivencia. Disponible para Android e iOS.">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="hero-improvements.css">
+    <link rel="stylesheet" href="features-improvements.css">
+    <link rel="stylesheet" href="features-cards-improvement.css">
+    <link rel="stylesheet" href="visibility-improvement.css">
+    <link rel="stylesheet" href="mobile-optimization.css">
+    <link rel="stylesheet" href="mobile-menu.css">
+    <link rel="stylesheet" href="responsive-balance.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <img src="LOGOTIPNAV.png" alt="Navis Logo" class="logo-image">
+                    <h1>NAVIS</h1>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="#home">Inicio</a></li>
+                    <li><a href="#modules">Módulos</a></li>
+                    <li><a href="#exploration">Exploración</a></li>
+                    <li><a href="#stats">Estadísticas</a></li>
+                    <li><a href="#testimonials">Testimonios</a></li>
+                    <li><a href="#features">Características</a></li>
+                    <li><a href="#about">Nosotros</a></li>
+                    <li><a href="#team">Equipo</a></li>
+                    <li><a href="#download">Descargar</a></li>
+                </ul>
+                <div class="nav-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-background">
+            <div class="hero-particles"></div>
+            <div class="hero-shapes">
+                <div class="shape shape-1"></div>
+                <div class="shape shape-2"></div>
+                <div class="shape shape-3"></div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <i class="fas fa-star"></i>
+                    <span>App #1 en Navegación</span>
+                </div>
+                <h1 class="hero-title">
+                    <span class="hero-title-line">Navegación Inteligente</span>
+                    <span class="hero-title-line gradient-text">para el Mundo Real</span>
+                </h1>
+                <p class="hero-description">
+                    Navis combina la precisión de la tecnología moderna con la simplicidad que necesitas. 
+                    Tu compañero perfecto para explorar, navegar y descubrir el mundo.
+                </p>
+                <div class="hero-actions">
+                    <div class="hero-buttons">
+                        <a href="https://play.google.com/store/apps/details?id=com.aracedev.app" target="_blank" class="btn btn-primary btn-large">
+                            <i class="fas fa-download"></i>
+                            <div class="btn-text">
+                                <div class="btn-title">Descargar</div>
+                                <div class="btn-subtitle">Gratis</div>
+                            </div>
+                        </a>
+                        <a href="#modules" class="btn btn-secondary btn-large">
+                            <i class="fas fa-play"></i>
+                            <div class="btn-text">
+                                <div class="btn-title">Ver Demo</div>
+                                <div class="btn-subtitle">2 min</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="hero-play">
+                        <button class="play-button">
+                            <i class="fas fa-play"></i>
+                        </button>
+                        <span>Ver en acción</span>
+                    </div>
+                </div>
+                <div class="hero-features">
+                    <div class="feature-item">
+                        <div class="feature-icon">
+                            <i class="fas fa-mobile-alt"></i>
+                        </div>
+                        <div class="feature-text">
+                            <h4>Multiplataforma</h4>
+                            <p>Android & iOS</p>
+                        </div>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="feature-text">
+                            <h4>GPS Preciso</h4>
+                            <p>Navegación exacta</p>
+                        </div>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-icon">
+                            <i class="fas fa-cloud-sun"></i>
+                        </div>
+                        <div class="feature-text">
+                            <h4>Tiempo Real</h4>
+                            <p>Datos actualizados</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="hero-phone">
+                    <div class="phone-frame">
+                        <div class="phone-screen">
+                            <div class="screen-content">
+                                <div class="status-bar">
+                                    <div class="status-time">9:41</div>
+                                    <div class="status-icons">
+                                        <i class="fas fa-signal"></i>
+                                        <i class="fas fa-wifi"></i>
+                                        <i class="fas fa-battery-three-quarters"></i>
+                                    </div>
+                                </div>
+                                <div class="app-body">
+                                    <div class="weather-widget">
+                                        <div class="weather-icon">
+                                            <i class="fas fa-sun"></i>
+                                        </div>
+                                        <div class="weather-info">
+                                            <div class="weather-temp">24°C</div>
+                                            <div class="weather-location">San Salvador</div>
+                                        </div>
+                                    </div>
+                                    <div class="compass-widget">
+                                        <div class="compass-needle">
+                                            <i class="fas fa-location-arrow"></i>
+                                        </div>
+                                        <div class="compass-direction">N</div>
+                                    </div>
+                                    <div class="modules-grid">
+                                        <div class="module-item active">
+                                            <i class="fas fa-cloud-sun"></i>
+                                        </div>
+                                        <div class="module-item">
+                                            <i class="fas fa-compass"></i>
+                                        </div>
+                                        <div class="module-item">
+                                            <i class="fas fa-sun"></i>
+                                        </div>
+                                        <div class="module-item">
+                                            <i class="fas fa-mobile-alt"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modules Section -->
+    <section id="modules" class="modules">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Módulos de Navis</h2>
+                <p class="section-description">
+                    Cuatro herramientas poderosas integradas en una sola aplicación
+                </p>
+            </div>
+            <div class="modules-grid">
+                <div class="module-card" data-module="weather">
+                    <div class="module-icon">
+                        <i class="fas fa-sun"></i>
+                    </div>
+                    <h3>Estación Meteorológica</h3>
+                    <p>Datos del clima en tiempo real, pronóstico de 5 días y búsqueda de ciudades globales.</p>
+                    <ul class="module-features">
+                        <li>🌡️ Temperatura actual</li>
+                        <li>🌧️ Pronóstico extendido</li>
+                        <li>🌍 Búsqueda global</li>
+                        <li>📍 GPS automático</li>
+                    </ul>
+                </div>
+
+                <div class="module-card" data-module="compass">
+                    <div class="module-icon">
+                        <i class="fas fa-compass"></i>
+                    </div>
+                    <h3>Brújula Digital</h3>
+                    <p>Orientación magnética precisa con visualización intuitiva y navegación direccional.</p>
+                    <ul class="module-features">
+                        <li>🧭 Orientación magnética</li>
+                        <li>📐 Grados precisos</li>
+                        <li>🎯 Navegación direccional</li>
+                        <li>⚡ Calibración automática</li>
+                    </ul>
+                </div>
+
+                <div class="module-card" data-module="proximity">
+                    <div class="module-icon">
+                        <i class="fas fa-broadcast-tower"></i>
+                    </div>
+                    <h3>Sensor de Proximidad</h3>
+                    <p>Detección avanzada de objetos cercanos y monitoreo de sensores ambientales.</p>
+                    <ul class="module-features">
+                        <li>📡 Detección de proximidad</li>
+                        <li>💡 Sensor de luz</li>
+                        <li>💧 Humedad ambiental</li>
+                        <li>🌡️ Temperatura ambiente</li>
+                    </ul>
+                </div>
+
+                <div class="module-card" data-module="adaptive">
+                    <div class="module-icon">
+                        <i class="fas fa-lightbulb"></i>
+                    </div>
+                    <h3>Pantalla Adaptativa</h3>
+                    <p>Control inteligente de brillo, linterna y comunicación por código Morse.</p>
+                    <ul class="module-features">
+                        <li>💡 Control de brillo</li>
+                        <li>🔦 Linterna integrada</li>
+                        <li>📡 Código Morse</li>
+                        <li>🌙 Modo nocturno</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Exploration Section -->
+    <section id="exploration" class="exploration">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Explora la Naturaleza con Confianza</h2>
+                <p class="section-description">
+                    Navis está diseñada para acompañarte en todas tus aventuras al aire libre
+                </p>
+            </div>
+            <div class="exploration-grid">
+                <div class="exploration-card">
+                    <div class="exploration-icon">
+                        <i class="fas fa-hiking"></i>
+                    </div>
+                    <h3>Senderismo y Trekking</h3>
+                    <p>Navega por senderos desconocidos con confianza. La brújula digital te guiará mientras los sensores ambientales te mantienen informado sobre las condiciones del terreno.</p>
+                    <ul class="exploration-features">
+                        <li>📍 Navegación GPS precisa</li>
+                        <li>🌡️ Monitoreo de temperatura</li>
+                        <li>💧 Detección de humedad</li>
+                        <li>🌙 Modo nocturno para senderismo nocturno</li>
+                    </ul>
+                </div>
+                <div class="exploration-card">
+                    <div class="exploration-icon">
+                        <i class="fas fa-mountain"></i>
+                    </div>
+                    <h3>Montañismo y Escalada</h3>
+                    <p>Conquista las cumbres más altas con herramientas especializadas. El clima en tiempo real y los sensores de proximidad te ayudarán a tomar decisiones seguras.</p>
+                    <ul class="exploration-features">
+                        <li>⛰️ Altitud y presión atmosférica</li>
+                        <li>🌤️ Pronóstico meteorológico detallado</li>
+                        <li>📡 Detección de obstáculos cercanos</li>
+                        <li>🔦 Linterna de emergencia</li>
+                    </ul>
+                </div>
+                <div class="exploration-card">
+                    <div class="exploration-icon">
+                        <i class="fas fa-campground"></i>
+                    </div>
+                    <h3>Camping y Aventuras</h3>
+                    <p>Disfruta de la naturaleza con todas las comodidades. Desde encontrar el lugar perfecto para acampar hasta comunicarte en código morse.</p>
+                    <ul class="exploration-features">
+                        <li>🏕️ Búsqueda de ubicaciones ideales</li>
+                        <li>📡 Comunicación por código morse</li>
+                        <li>🔋 Optimización de batería</li>
+                        <li>🌅 Modo adaptativo para diferentes horarios</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section id="stats" class="stats">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Navis en Números</h2>
+                <p class="section-description">
+                    Datos que respaldan nuestra misión de conectar a las personas con la naturaleza
+                </p>
+            </div>
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <div class="stat-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <div class="stat-number">10,000+</div>
+                    <div class="stat-label">Exploradores Activos</div>
+                    <div class="stat-description">Usuarios que confían en Navis para sus aventuras</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-icon">
+                        <i class="fas fa-route"></i>
+                    </div>
+                    <div class="stat-number">50,000+</div>
+                    <div class="stat-label">Rutas Exploradas</div>
+                    <div class="stat-description">Senderos y caminos descubiertos con nuestra app</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-icon">
+                        <i class="fas fa-cloud-sun"></i>
+                    </div>
+                    <div class="stat-number">1M+</div>
+                    <div class="stat-label">Datos Meteorológicos</div>
+                    <div class="stat-description">Información climática procesada diariamente</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <div class="stat-number">99.9%</div>
+                    <div class="stat-label">Precisión GPS</div>
+                    <div class="stat-description">Exactitud en navegación y ubicación</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Lo que Dicen Nuestros Exploradores</h2>
+                <p class="section-description">
+                    Historias reales de aventureros que han transformado sus exploraciones con Navis
+                </p>
+            </div>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <div class="quote-icon">
+                            <i class="fas fa-quote-left"></i>
+                        </div>
+                        <p>"Navis me salvó durante una tormenta inesperada en la montaña. Su pronóstico meteorológico me alertó a tiempo y pude encontrar refugio. ¡Increíble!"</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div class="author-info">
+                            <h4>María González</h4>
+                            <p>Montañista Profesional</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <div class="quote-icon">
+                            <i class="fas fa-quote-left"></i>
+                        </div>
+                        <p>"La brújula digital es impresionante. He explorado más de 20 senderos nuevos gracias a su precisión. Es mi compañero inseparable en cada aventura."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div class="author-info">
+                            <h4>Carlos Rodríguez</h4>
+                            <p>Guía de Senderismo</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <div class="quote-icon">
+                            <i class="fas fa-quote-left"></i>
+                        </div>
+                        <p>"Los sensores de proximidad me ayudaron a detectar un oso en el bosque. Navis no solo es útil, ¡es esencial para la seguridad!"</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div class="author-info">
+                            <h4>Ana Martínez</h4>
+                            <p>Fotógrafa de Naturaleza</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Características Avanzadas</h2>
+                <p class="section-description">
+                    Tecnología de vanguardia para todas tus aventuras
+                </p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-item">
+                    <div class="feature-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3>Multiplataforma</h3>
+                    <p>Disponible para Android e iOS con sincronización entre dispositivos.</p>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">
+                        <i class="fas fa-satellite"></i>
+                    </div>
+                    <h3>GPS Preciso</h3>
+                    <p>Ubicación en tiempo real con precisión de metros para navegación exacta.</p>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">
+                        <i class="fas fa-cloud-sun"></i>
+                    </div>
+                    <h3>Datos en Tiempo Real</h3>
+                    <p>Información meteorológica actualizada constantemente desde fuentes confiables.</p>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Modo Supervivencia</h3>
+                    <p>Herramientas esenciales para situaciones de emergencia y aventuras extremas.</p>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">
+                        <i class="fas fa-battery-full"></i>
+                    </div>
+                    <h3>Optimizado</h3>
+                    <p>Consumo eficiente de batería para uso prolongado en campo.</p>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">
+                        <i class="fas fa-lock"></i>
+                    </div>
+                    <h3>Privacidad</h3>
+                    <p>Tus datos personales y ubicación están protegidos con encriptación avanzada.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Nosotros</h2>
+                <p class="section-description">
+                    Conoce más sobre el proyecto Navis y nuestro equipo de desarrollo
+                </p>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>Acerca del Proyecto</h3>
+                    <p>
+                        Navis es una aplicación desarrollada como parte de la evaluación del <strong>Parcial N.º 2 de Desarrollo de Aplicaciones Móviles II, Grupo E</strong>, 
+                        dirigida por el <strong>Ing. Herberth Enrique Contreras Castro</strong>.
+                    </p>
+                    <p>
+                        La app ofrece herramientas de navegación y exploración, como clima, brújula, sensor de proximidad, linterna y modo adaptativo, 
+                        brindando una experiencia práctica e intuitiva para el usuario.
+                    </p>
+                    <div class="academic-info">
+                        <div class="info-card">
+                            <i class="fas fa-graduation-cap"></i>
+                            <h4>Materia</h4>
+                            <p>Desarrollo de Aplicaciones Móviles II</p>
+                        </div>
+                        <div class="info-card">
+                            <i class="fas fa-users"></i>
+                            <h4>Grupo</h4>
+                            <p>Grupo E</p>
+                        </div>
+                        <div class="info-card">
+                            <i class="fas fa-chalkboard-teacher"></i>
+                            <h4>Profesor</h4>
+                            <p>Ing. Herberth Enrique Contreras Castro</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section id="team" class="team">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Equipo de Desarrollo</h2>
+                <p class="section-description">
+                    Conoce a los desarrolladores detrás de Navis
+                </p>
+            </div>
+            <div class="team-grid">
+                <div class="team-member">
+                    <div class="member-avatar">
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <h3>Melvin Edgardo Calzada Sibrián</h3>
+                    <p class="member-role">Desarrollador Principal</p>
+                    <p class="member-description">
+                        Especialista en desarrollo móvil multiplataforma con experiencia en Android e iOS.
+                    </p>
+                    <div class="member-skills">
+                        <span class="skill">Android</span>
+                        <span class="skill">iOS</span>
+                        <span class="skill">Kotlin</span>
+                        <span class="skill">Swift</span>
+                    </div>
+                </div>
+                <div class="team-member">
+                    <div class="member-avatar">
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <h3>William Alexander Pacheco Vargas</h3>
+                    <p class="member-role">Desarrollador Principal</p>
+                    <p class="member-description">
+                        Experto en desarrollo de aplicaciones móviles con enfoque en UX/UI y funcionalidades avanzadas.
+                    </p>
+                    <div class="member-skills">
+                        <span class="skill">Android</span>
+                        <span class="skill">iOS</span>
+                        <span class="skill">UI/UX</span>
+                        <span class="skill">API Integration</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Download Section -->
+    <section id="download" class="download">
+        <div class="container">
+            <div class="download-content">
+                <h2>Descarga Navis Ahora</h2>
+                <p>Disponible en las principales tiendas de aplicaciones</p>
+                <div class="download-buttons">
+                    <a href="https://play.google.com/store/apps/details?id=com.aracedev.app" target="_blank" class="download-btn android">
+                        <i class="fab fa-google-play"></i>
+                        <div class="btn-content">
+                            <span class="btn-title">Descargar en</span>
+                            <span class="btn-subtitle">Google Play</span>
+                        </div>
+                    </a>
+                    <a href="#" class="download-btn ios">
+                        <i class="fab fa-app-store-ios"></i>
+                        <div class="btn-content">
+                            <span class="btn-title">Descargar en</span>
+                            <span class="btn-subtitle">App Store</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="download-info">
+                    <p><i class="fas fa-check"></i> Gratis para descargar</p>
+                    <p><i class="fas fa-check"></i> Sin anuncios molestos</p>
+                    <p><i class="fas fa-check"></i> Actualizaciones regulares</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+            <div class="footer-section">
+                <div class="footer-brand">
+                    <img src="LOGOTIPNAV.png" alt="Navis Logo" class="footer-logo">
+                    <h3>NAVIS</h3>
+                </div>
+                <p>Tu compañero de navegación inteligente para todas las aventuras.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Módulos</h4>
+                    <ul>
+                        <li><a href="#modules">Estación Meteorológica</a></li>
+                        <li><a href="#modules">Brújula Digital</a></li>
+                        <li><a href="#modules">Sensor de Proximidad</a></li>
+                        <li><a href="#modules">Pantalla Adaptativa</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Soporte</h4>
+                    <ul>
+                        <li><a href="#">Centro de Ayuda</a></li>
+                        <li><a href="#">Contacto</a></li>
+                        <li><a href="#">Política de Privacidad</a></li>
+                        <li><a href="#">Términos de Uso</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Información Académica</h4>
+                    <p><strong>Materia:</strong> Desarrollo de Aplicaciones Móviles II</p>
+                    <p><strong>Grupo:</strong> Grupo E</p>
+                    <p><strong>Profesor:</strong> Ing. Herberth Enrique Contreras Castro</p>
+                    <p><strong>Evaluación:</strong> Parcial N.º 2</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Desarrolladores</h4>
+                    <p>Melvin Edgardo Calzada Sibrián</p>
+                    <p>William Alexander Pacheco Vargas</p>
+                    <p>Desarrollado con ❤️ para aventureros y exploradores.</p>
+                    <p>© 2025 Navis. Todos los derechos reservados.</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Navis. Hecho con pasión para la aventura.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
